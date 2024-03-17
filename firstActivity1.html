@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Details Form</title>
+  <style>
+    fieldset{
+        background-color: rgba(125, 54, 54, 0.679);
+    }
+
+    body{
+        background-color: rgb(136, 175, 28);
+        background-image: url("OIP (2).jpeg") none;
+
+        height: 100px;
+        width: auto;
+
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-top: 20px;
+       
+      border-radius: 20px;
+
+    }
+    th, td {
+      text-justify: auto;
+      border: 1px solid #0d284ed4;
+      padding: 8px;
+   
+    }
+    th {
+      background-color: #a68989;
+    }
+  </style>
+</head>
+<body>
+<fieldset><legend>User Details Form</legend>
+
+
+  <form id="userForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="first name" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" placeholder="last name" id="lastName" name="lastName" required><br><br>
+    
+    <label for="number">Mob no: </label>
+    <input type="text" placeholder="phone no" id="MobNum">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Mail id"><br><br>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+    <!-- <button type="button1" onclick="submitForm()">reset</button> -->
+
+  </form>
+</fieldset>
+  <h2>User Details Table</h2>
+  <table id="userTable">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>MobNum</th>
+     
+    </tr>
+  </table>
+
+  <script>
+    function submitForm() {
+      //// Get form values
+      var firstName = document.getElementById('firstName').value;
+      var lastName = document.getElementById('lastName').value;
+      var email = document.getElementById('email').value;
+      var Mob_no = document.getElementById('MobNum').value;
+
+      //// Create a new table row
+      var table = document.getElementById('userTable');
+      var newRow = table.insertRow(table.rows.length);
+
+      //// Insert cells into the row
+      var cell1 = newRow.insertCell(0);
+      var cell2 = newRow.insertCell(1);
+      var cell3 = newRow.insertCell(2);
+      var cell4 = newRow.insertCell(3);
+
+      //// Set cell values
+      cell1.innerHTML = firstName;
+      cell2.innerHTML = lastName;
+      cell3.innerHTML = email;
+      cell4.innerHTML = Mob_no;
+
+      //// Clear the form
+      document.getElementById('userForm').reset();
+    }
+  </script>
+
+</body>
+</html>

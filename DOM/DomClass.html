@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        var div  = document.createElement('div');
+        div.style.backgroundColor = "Green";
+
+        var para = document.createElement('div');
+        para.innerText="HELLO SUMANT";
+        para.style.textAlign="center";
+
+        // para.innerHTML="hello";
+        const image = document.createElement('image');
+        image.src = 'DOM/OIP (2).jpeg';
+        div.appendChild(image);
+
+        document.body.appendChild(div);
+        div.appendChild(para);
+        // document.body.style.backgroundImage = "url(OIP(2).jpeg)"
+
+        var div1 = document.createElement('div');
+        document.body.appendChild(div1);
+        div1.style.display="flex";
+
+        var div2 = document.createElement('div');
+        div2.style.backgroundColor='tan';
+        var content = document.createElement("p")
+
+    </script>
+    
+</body>
+</html>

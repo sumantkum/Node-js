@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <p class="para" id="p1">This is paragraph 1</p>
+<p class="para" id="p2">This is paragraph 2</p>
+<p class="para" id="p3">This is Paragraph 3</p>    -->
+
+<div id="output">
+
+    <object data="" type=""></object>
+
+</div>
+
+<script>
+
+    var h1Ele = document.createElement("h1");
+    h1Ele.textContent="Java Script Object";
+
+var h2Ele = document.createElement("h1");
+    h2Ele.textContent="Person 1";
+
+    var peg1Ele = document.createElement("p");
+    h1Ele.textContent="Name: sumant";
+
+    var peg2Ele = document.createElement("p");
+    h1Ele.textContent="Section: K22AZ";
+    
+    document.body.appendChild(h1Ele);
+    document.body.appendChild(h2Ele);
+    document.body.appendChild(peg1Ele);
+    document.body.appendChild(peg2Ele);
+    
+
+
+    let outputdiv = document.getElementById("output");
+    outputdiv.innerHTML += "<h2> person 1: </h2>";
+    outputdiv.innerHTML += "<p>Name: "+ person1.name + "</p>"
+    outputdiv.innerHTML += "<p>Name: "+ person1.Age+ "</p>"
+    outputdiv.innerHTML += "<p>Name: "+ person1.city + "</p>"
+
+    outputdiv.innerHTML += "<h2> person 1: </h2>";
+    outputdiv.innerHTML += "<p>Name: "+ person2.name + "</p>"
+    outputdiv.innerHTML += "<p>Name: "+ person2.Age+ "</p>"
+    outputdiv.innerHTML += "<p>Name: "+ person2.city + "</p>"
+
+
+    const person1 = {
+        name:"Jone Deo",
+        Age:23,
+        city:"patna"
+
+    };
+
+    const person2 = {
+        name:"Sumant",
+        Age:22,
+        city:"patna"
+
+    };
+
+    console.log(person1.name);
+    console.log(person2.name);
+    console.log(person1.Age)
+    console.log(person2.Age)
+    console.log(person1.city);
+    console.log(person2.city)
+
+
+</script>
+    
+</body>
+</html>

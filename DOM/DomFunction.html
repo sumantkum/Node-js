@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+
+        #bulb{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 4px solid black;
+            /* background-color: yellow; */
+        }
+        button{
+            padding: 10px 30px;
+            font-size: 20px;
+            margin: 100px;
+            border-radius: 10px;
+        }
+        h1{
+            font-size: 70px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+
+    <h1>Hello sumant</h1>
+    <h1>Hello sumant kumar</h1>
+    <h1>Hello sumant kumar Pandit</h1>
+    
+    <div id="bulb">
+
+    </div>
+    <button >Click ON</button>
+
+    <Script>
+
+        
+       var s = document.querySelector("h1");
+       s.innerHTML="Hello Sumant Kumar";
+       s.addEventListener("Click",function(){
+       s.innerHTML="Ok Thank you My Dear.";
+       s.style.color="green";
+       s.style.backgroundColor = "#000";
+       })
+
+
+    var h = document.querySelectorAll("h1");
+    console.log(h);
+
+    var bulb=document.querySelector("#bulb");
+    var btn = document.querySelector("button")
+
+    var flag = 0;
+    btn.addEventListener("click", function(){
+        bulb.style.backgroundColor="yellow";
+
+        if(flag == 0){
+            bulb.style.backgroundColor="yellow";
+            console.log("Cliocked");
+            flag = 1;
+        }
+
+        else{
+            bulb.style.backgroundColor="red";
+            console.log("Cliocked");
+            flag = 0;
+        }
+
+    })
+
+       
+
+    </Script>
+</body>
+</html>

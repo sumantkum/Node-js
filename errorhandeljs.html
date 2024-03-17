@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+
+    <title>Document</title>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, voluptates.</p>
+    <form action="">
+        <input type="button" value="click" onclick="first()" />
+    </form>
+    <script>
+
+        // function first(){
+        //     let a=123;
+        //     let b=1;
+        //     try{
+        //         if(b==1){
+        //             throw "do not divide by zero";
+        //         }
+        //     }
+        //     catch(e){
+        //         document.getElementById('demo').innerHTML += "<br>" + e + "<br>";
+        //     }
+        //     finally{
+        //         document.getElementById('demo').innerHTML += "it will exexcute anyways"
+        //     }
+        // }
+
+        //// Event
+
+        // var a=0;
+        // var b=0;
+        // var c=0;
+
+        // function changeBackground(){
+        //     var x = document.getElementById('bg');
+        //     x.style.backgroundColor='rgb('+a+', '+b+', '+c+')';
+        //     a += 100;
+        //     b+=a+50;
+        //     c+=b+70;
+
+        //     if(a>255) a=a-b;
+        //     if(b>255) b=a;
+        //     if(c>255) c=b;
+        // }
+
+
+        //// timer
+
+       var a=require('fs');
+       a.readFile('file.text', 'utf8', function(err, data){
+        if(err){
+            console.error(err)
+        }
+        else{
+            console.log(data);
+        }
+       })
+
+    </script>
+
+</head>
+<body>
+
+<h4>the input box will change color when up arrow key is passed</h4>
+  <input id="bg" onkeyup="changeBackground()" placeholder="write somthiing" style="color: red;" >  
+  
+</body>
+</html>

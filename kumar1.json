@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "65f651637cfb0b77b36d74a5"
+  },
+  "const": "buff.write(\"Jai",
+  "buff": "Sri",
+  "=": "Ram\");"
+},
+{
+  "_id": {
+    "$oid": "65f651637cfb0b77b36d74a6"
+  },
+  "const": "console.log(toString.buff());"
+},
+{
+  "_id": {
+    "$oid": "65f651637cfb0b77b36d74a7"
+  },
+  "const": "//",
+  "buff": "console.log(buff)"
+},
+{
+  "_id": {
+    "$oid": "65f651637cfb0b77b36d74a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "65f651637cfb0b77b36d74a9"
+  }
+},
+{
+  "_id": {
+    "$oid": "65f651637cfb0b77b36d74aa"
+  }
+},
+{
+  "_id": {
+    "$oid": "65f651637cfb0b77b36d74ab"
+  }
+}]

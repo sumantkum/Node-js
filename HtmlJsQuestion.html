@@ -1,0 +1,164 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+
+    <script>
+        function hello(){
+            alert("Hai how are you new friend");
+        }
+    </script>
+
+</head>
+<body>
+    <button type="button" onclick="hello()",] style="margin-left: 50%;">
+        Click me
+
+    </button>
+    
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>Document</title>
+
+        <script>
+                var a = 0;
+                var b = 0;
+                var c = 0;
+
+            function hello() {
+                var x = document.getElementById('bg');
+                x.style.backgroundColor = 'rgb(' + a + ', ' + b + ', ' + c + ')';
+                a += 100;
+                b += a + 50;
+                c += b + 70;
+                if (a > 225) {
+                    a = a - b;
+                }
+                if (b > 225) {
+                    b = a;
+
+                }
+                if (c > 225) {
+                    c = b;
+                }
+
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h1>the color wiil be change when you are writing some thing</h1>
+        <input id="bg" onkeyup="hello()" placeholder="write somethig" style="color: #fff;">
+    </body>
+    </html> -->
+
+<!-- <!doctype html>
+<html>
+    <head>
+        <script>
+            function hov() {
+                var e=document.getElementById('hover');
+                e.style.display='none';
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h1>Hello how are you brother</h1>
+        <div id="hover"
+            onmouseover="hov()"
+            style="background-color:green;
+                    height:100px;
+                    width:100px;">
+        </div>
+    </body>
+</html> -->
+
+
+
+<!-- <!doctype html>
+<html>
+ 
+<head>
+    <script>
+        function out() {
+            var e=document.getElementById('hover');
+            e.style.display='none';
+        }
+    </script>
+</head>
+ 
+<body>
+    <div id="hover" onmouseout="out()" style="background-color:green;height:200px;width:200px;">
+    </div>
+</body>
+ 
+</html> -->
+
+
+<!-- <!doctype html>
+<html>
+
+<head></head>
+
+<body>
+	<input onchange="alert(this.value)"
+		type="number"
+		style="margin-left: 45%;">
+</body>
+
+</html> -->
+
+
+
+<!doctype html>
+<!-- <!doctype html>
+<html>
+
+<head>
+	<script>
+		function focused() {
+			var e=document.getElementById('inp');
+			if(confirm('Got it?')) {
+				e.blur();
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<p style="margin-left: 45%;">
+		Take the focus into the input box below:
+	</p>
+	<input id="inp"
+		onfocus="focused()" 
+		style=" margin-left: 45%;">
+</body>
+
+</html> -->
+
+
+<!doctype html>
+<html>
+
+<head></head>
+
+<body style="margin-left: 40%;">
+	<p>Write something in the input box and then click elsewhere
+		in the document body.</p>
+	<input onblur="alert(this.value)">
+</body>
+
+</html>
+
+
+    

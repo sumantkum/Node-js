@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div {
+            background-color: yellow;
+
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            background-image: url("OIP\ \(2\).jpeg");
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p id="para" onclick="hello()"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Quod corrupti unde sapiente reprehenderit quas, maxime
+              vitae expedita similique, excepturi reiciendis autem 
+              voluptatibus vero eos odit dignissimos sunt optio. 
+              Quas temporibus laborum, itaque dolores placeat minima
+               excepturi expedita suscipit accusantium pariatur, officia 
+               laboriosam, impedit et porro dolore. A laborum commodi omnis.</p>
+
+    Enter you name: <input id="fname" onchange="hai()">
+
+    <script>
+        // const div = document.createElement("div");
+        // const para = document.createElement("p");
+        // const text = document.createTextNode("How are you");
+
+
+        // para.textContent = "Hello";
+        // document.body.appendChild(div);
+        // div.appendChild(para);
+
+        var flag = 0;
+        function hello(){
+            var s = document.getElementById("para");
+            s.style.backgroundColor="red";
+
+            
+        if(flag == 0){
+            bulb.style.backgroundColor="yellow";
+            console.log("Cliocked");
+            flag = 1;
+        }
+
+        else{
+            bulb.style.backgroundColor="red";
+            console.log("Cliocked");
+            flag = 0;
+            }
+        }
+
+        
+        function hai() {
+            var x = document.getElementById("fname");
+            x.style.backgroundColor = "red";
+            
+        }
+
+        document.body.appendChild(text);
+        div.removeChild(para);
+
+
+
+    </script>
+
+</body>
+
+</html>
